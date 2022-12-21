@@ -23,7 +23,7 @@ logo = Image.open(Logo_link)
 logo = logo.convert('RGBA')
  
 # taking base width
-basewidth = 100
+basewidth = 700
  
 # adjust image size
 wpercent = (basewidth/float(logo.size[0]))
@@ -33,7 +33,7 @@ logo = logo.resize((basewidth, hsize), Image.ANTIALIAS)
 QRcode = qrcode.QRCode(
     version=1,
     error_correction=qrcode.constants.ERROR_CORRECT_H,
-    box_size=10,
+    box_size=100,
     border=4,
 )
  
